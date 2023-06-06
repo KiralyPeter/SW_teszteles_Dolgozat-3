@@ -1,14 +1,14 @@
 
-xdescribe('Input tesztelése', ()=> { //x-el ki lehet zárni a tesztet..
-    xit('Szám', ()=> {
+describe('Input tesztelése', ()=> { //x-el ki lehet zárni a tesztet..
+    it('Szám', ()=> {
         let actual = checkInput(30);
         expect(actual).toBe(true);
     });
-    xit('Nem szám', ()=> {
+    it('Nem szám', ()=> {
         let actual = checkInput('aaa');
         expect(actual).toBe(false);
     });
-    xit('0 input', ()=> {
+    it('0 input', ()=> {
         let actual = checkInput(0);
         expect(actual).toBe(false);
     });
