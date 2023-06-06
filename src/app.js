@@ -45,8 +45,12 @@ function startCalc(){
     console.log("Magasság 0-nál nagyobb szám: ", checkInput(height));
     console.log("Szélesség 0-nál nagyobb szám: ", checkInput(width));
     console.log("Hosszúság 0-nál nagyobb szám: ", checkInput(length));
-    state.volume = calcVolume(height, width, length);
-    doc.volumeInput.value = state.volume;
+    if (checkInput(height) || checkInput(width) || checkInput(length)){
+        state.volume = calcVolume(height, width, length);
+        doc.volumeInput.value = state.volume;
+    } else {
+        doc.volumeInput.value = "Hiba, csak 0-nál nagyobb számokat lehet beírni!"
+    }
 }
 
 // ezt is tesztelni kell...
