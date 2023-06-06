@@ -1,4 +1,15 @@
+// Feladat Feladat 0364
+// https://szit.hu/doku.php?id=oktatas:programozas:feladatok:altalanos#feladat_0364
 
+/*
+* File: calc.spec.js
+* Author: Király Péter
+* Copyright: 2023, Király Péter
+* Group: Szoft-1-2-E
+* Date: 2023-06-06
+* Github: https://github.com/KiralyPeter/SW_teszteles_Dolgozat-3.git
+* Licenc: GNU GPL
+*/
 
 describe('Számítás tesztelése', ()=> {
     it('Normál teszt 1, Magasság: 2m, Szélesség: 5m, Hossz: 25m', ()=> {

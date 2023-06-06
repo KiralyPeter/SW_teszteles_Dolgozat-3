@@ -1,3 +1,16 @@
+// Feladat Feladat 0364
+// https://szit.hu/doku.php?id=oktatas:programozas:feladatok:altalanos#feladat_0364
+
+/*
+* File: app.js
+* Author: Király Péter
+* Copyright: 2023, Király Péter
+* Group: Szoft-1-2-E
+* Date: 2023-06-06
+* Github: https://github.com/KiralyPeter/SW_teszteles_Dolgozat-3.git
+* Licenc: GNU GPL
+*/
+
 const doc = {
     heightInput: document.querySelector('#height'),
     widthInput: document.querySelector('#width'),
