@@ -20,7 +20,7 @@ const doc = {
 };
 
 const state = {
-    index: 0
+    volume: 0
 };
 
 window.addEventListener('load', ()=> { // = 'onload' az esemény..
@@ -42,8 +42,8 @@ function startCalc(){
     let height = doc.heightInput.value;
     let weight = doc.widthInput.value;
     let length = doc.lengthInput.value;
-    state.index = calcVolume(height, weight, length);
-    doc.volumeInput.value = state.index;
+    state.volume = calcVolume(height, weight, length);
+    doc.volumeInput.value = state.volume;
 }
 
 // ezt is tesztelni kell...
