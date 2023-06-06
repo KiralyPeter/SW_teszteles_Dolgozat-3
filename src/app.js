@@ -45,7 +45,7 @@ function startCalc(){
     console.log("Magasság 0-nál nagyobb szám: ", checkInput(height));
     console.log("Szélesség 0-nál nagyobb szám: ", checkInput(width));
     console.log("Hosszúság 0-nál nagyobb szám: ", checkInput(length));
-    if (checkInput(height) || checkInput(width) || checkInput(length)){
+    if (checkInput(height) && checkInput(width) && checkInput(length)){
         state.volume = calcVolume(height, width, length);
         doc.volumeInput.value = state.volume;
     } else {
