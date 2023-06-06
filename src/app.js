@@ -40,15 +40,18 @@ function init(){
 
 function startCalc(){
     let height = doc.heightInput.value;
-    let weight = doc.widthInput.value;
+    let width = doc.widthInput.value;
     let length = doc.lengthInput.value;
-    state.volume = calcVolume(height, weight, length);
+    console.log("Magasság 0-nál nagyobb szám: ", checkInput(height));
+    console.log("Szélesség 0-nál nagyobb szám: ", checkInput(width));
+    console.log("Hosszúság 0-nál nagyobb szám: ", checkInput(length));
+    state.volume = calcVolume(height, width, length);
     doc.volumeInput.value = state.volume;
 }
 
 // ezt is tesztelni kell...
-function calcVolume(height, weight, length){
-    return (height-0.1) * weight * length; // -0.1 = -10cm a magasságból
+function calcVolume(height, width, length){
+    return (height-0.1) * width * length; // -0.1 = -10cm a magasságból
 }
 
 // ezt is tesztelni kell...
